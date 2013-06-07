@@ -1,0 +1,36 @@
+<%= form_for(@issue) do |f| %>
+
+  <div class="field">
+    <%= f.label :version %><br />
+    <%= f.number_field :version %>
+  </div>
+
+  <div class="field">
+    <%= f.label :couverture %><br />
+    <%= f.file_field :couverture %>
+  </div>
+
+  <div class="field">
+    <%= f.label :special %><br />
+    <%= f.text_area :special %>
+  </div>
+
+  <div class="field">
+    <%= f.label :journal_id %><br />
+    <select id="issue_journal_id" name="issue[journal_id]">
+      <% Journal.where("user_id = ?", current_user.id).order("title ASC").each do |journal|  %>
+        <option value="<%= journal.id %>"><%= journal.title %> </option>
+      <% end %>
+    </select>
+  </div>
+
+  <div class="field">
+    <%= f.label :edition %><br />
+    <%= f.text_field :edition %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>

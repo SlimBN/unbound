@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  username: MyString
+  avatar: MyString
+  slug: MyString
+  country_id: 1
+  state_id: 1
+  job_id: 1
+
+two:
+  username: MyString
+  avatar: MyString
+  slug: MyString
+  country_id: 1
+  state_id: 1
+  job_id: 1

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @journal.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @journal.description %>
+</p>
+
+<p>
+  <b>Affiche:</b>
+  <%= image_tag @journal.affiche_url.to_s %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @journal.user_id %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @journal.country_id %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @journal.state_id %>
+</p>
+
+<p>
+  <b>Continent:</b>
+  <%= @journal.continent_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_journal_path(@journal) %> |
+<%= link_to 'Back', journals_path %>

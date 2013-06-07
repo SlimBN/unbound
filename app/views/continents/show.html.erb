@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @continent.name %>
+</p>
+
+<p>
+  <b>Slug:</b>
+  <%= @continent.slug %>
+</p>
+
+
+<%= link_to 'Edit', edit_continent_path(@continent) %> |
+<%= link_to 'Back', continents_path %>

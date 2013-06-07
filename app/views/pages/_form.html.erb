@@ -1,0 +1,25 @@
+<%= form_for(@page) do |f| %>
+
+  <div class="field">
+    <%= f.label :issue_id %><br />
+    <%= f.number_field :issue_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :background %><br />
+    <%= f.file_field :background %>
+  </div>
+
+  <div class="field">
+    <%= f.label :order %><br />
+    <%= f.number_field :order %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

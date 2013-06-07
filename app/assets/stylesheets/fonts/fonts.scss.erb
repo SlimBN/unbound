@@ -1,0 +1,106 @@
+
+
+@font-face {
+  font-family: 'Enriqueta';
+  src: url('<%= asset_path('Enriqueta.ttf') %>');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'CapsuulaRegular';
+    src: url('<%= asset_path('Capsuula-webfont.eot') %>');
+    src: url('<%= asset_path('Capsuula-webfont.eot?#iefix') %>') format('embedded-opentype'),
+         url('<%= asset_path('Capsuula-webfont.woff') %>') format('woff'),
+         url('<%= asset_path('Capsuula-webfont.ttf') %>') format('truetype'),
+         url('<%= asset_path('Capsuula-webfont.svg#CapsuulaRegular') %>') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+  font-family: 'fontello';
+  src: url('<%= asset_path('fontello.eot?69207018') %>');
+  src: url('<%= asset_path('fontello.eot?69207018#iefix') %>') format('embedded-opentype'),
+       url('<%= asset_path('fontello.woff?69207018') %>') format('woff'),
+       url('<%= asset_path('fontello.ttf?69207018') %>') format('truetype'),
+       url('<%= asset_path('fontello.svg?69207018#fontello') %>') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?69207018#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-female:before { content: '\e817'; } /* 'î —' */
+.icon-male:before { content: '\e816'; } /* 'î –' */
+.icon-user:before { content: '\e802'; } /* 'î ‚' */
+.icon-cog:before { content: '\e80a'; } /* 'î Š' */
+.icon-camera:before { content: '\e80d'; } /* 'î ' */
+.icon-lightbulb:before { content: '\e80e'; } /* 'î Ž' */
+.icon-pencil:before { content: '\e806'; } /* 'î †' */
+.icon-desktop:before { content: '\e80b'; } /* 'î ‹' */
+.icon-location:before { content: '\e810'; } /* 'î ' */
+.icon-doc:before { content: '\e800'; } /* 'î €' */
+.icon-thumbs-up:before { content: '\e80f'; } /* 'î ' */
+.icon-photo:before { content: '\e80c'; } /* 'î Œ' */
+.icon-money:before { content: '\e808'; } /* 'î ˆ' */
+.icon-music:before { content: '\e801'; } /* 'î ' */
+.icon-graduation-cap:before { content: '\e805'; } /* 'î …' */
+.icon-beaker:before { content: '\e809'; } /* 'î ‰' */
+.icon-fire:before { content: '\e804'; } /* 'î „' */
+.icon-wallet:before { content: '\e807'; } /* 'î ‡' */
+.icon-globe:before { content: '\e803'; } /* 'î ƒ' */
+.icon-down-open:before { content: '\e811'; } /* 'î ‘' */
+.icon-up-open:before { content: '\e812'; } /* 'î ’' */
+.icon-th-thumb-empty:before { content: '\de'; } /* 'Ãž' */
+.icon-globe-1:before { content: '\e81a'; } /* 'î š' */
+.icon-paper-plane:before { content: '\e819'; } /* 'î ™' */
+.icon-hash:before { content: '\e818'; } /* 'î ˜' */
+.icon-facebook:before { content: '\e814'; } /* 'î ”' */
+.icon-twitter:before { content: '\e815'; } /* 'î •' */
+.icon-gplus:before { content: '\e813'; } /* 'î “' */
+.icon-user-male:before { content: '\ae'; } /* 'Â®' */
+.icon-user-female:before { content: '\fea'; } /* 'à¿ª' */
+.icon-users:before { content: '\e81d'; } /* 'î ' */

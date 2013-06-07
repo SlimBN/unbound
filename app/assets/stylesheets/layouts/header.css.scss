@@ -1,0 +1,124 @@
+header {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	height: 50px;
+	width: 100%;
+	min-width: 800px;
+
+	background-color: #000000;
+	background-image: url(image-path("bgs/dark.png"));
+
+	.logo {
+		display: inline-block;
+
+		width: 50px;
+		height: 50px;
+
+		line-height: 50px;
+		text-align: center;
+		vertical-align: middle;
+
+		background-color: #D61433;
+	}
+
+	.motto {
+		display: inline-block;
+
+		padding-left: 10px;
+
+		min-width: 500px;
+		height: 50px;
+
+		line-height: 50px;
+		text-align: left;
+		color: #fff;
+		vertical-align: middle;
+
+		background-image: url(image-path("bgs/dark.png"));
+
+	}
+
+	.login {
+		position: relative;
+
+		display: inline-block;
+		float: right;
+
+		width: 100px;
+		height: 50px;
+
+		line-height: 50px;
+		text-align: center;
+		color: #fff;
+		vertical-align: middle;
+
+		background-color: #C1C1C1;
+
+		.login-form {
+			position: absolute;
+			top: 50px;
+			right: 0px;
+
+			visibility: hidden;
+
+			width: 300px;
+
+			z-index: 1000;
+
+			background-color: #000;
+			background-image: url(image-path("bgs/dark.png"));
+
+		}
+
+		&:hover {
+			background-color: #000;
+			background-image: url(image-path("bgs/dark.png"));
+		}
+
+		&:hover > .login-form {
+			visibility: visible;
+		}
+	}
+
+	.join {
+		display: inline-block;
+		float: right;
+
+		width: 100px;
+		height: 50px;
+
+		line-height: 50px;
+		text-align: center;
+		color: #fff;
+		vertical-align: middle;
+
+		background-color: #D61433;
+
+		.join-form {
+			position: absolute;
+			top: 50px;
+			right: 0px;
+
+			visibility: hidden;
+
+			width: 300px;
+
+			z-index: 1000;
+
+			background-color: #000;
+			background-image: url(image-path("bgs/dark.png"));
+
+		}
+
+		&:hover {
+			background-color: #000;
+			background-image: url(image-path("bgs/dark.png"));
+		}
+
+		&:hover > .join-form {
+			visibility: visible;
+		}
+	}
+}

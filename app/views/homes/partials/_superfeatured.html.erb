@@ -1,0 +1,5 @@
+<% Article.where("superfeatured = ?", TRUE).last(1).each do |superfeatured| %>
+	<script>
+		$("body").slimBG("<%= asset_path (superfeatured.cover.to_s) %>");
+	</script>
+<% end %>

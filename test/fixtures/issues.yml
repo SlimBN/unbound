@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  version: 1
+  couverture: MyString
+  special: MyText
+  journal_id: 1
+  edition: MyString
+
+two:
+  version: 1
+  couverture: MyString
+  special: MyText
+  journal_id: 1
+  edition: MyString

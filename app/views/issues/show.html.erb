@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Version:</b>
+  <%= @issue.version %>
+</p>
+
+<p>
+  <b>Couverture:</b>
+  <%= @issue.couverture %>
+</p>
+
+<p>
+  <b>Special:</b>
+  <%= @issue.special %>
+</p>
+
+<p>
+  <b>Journal:</b>
+  <%= @issue.journal_id %>
+</p>
+
+<p>
+  <b>Edition:</b>
+  <%= @issue.edition %>
+</p>
+
+
+<%= link_to 'Edit', edit_issue_path(@issue) %> |
+<%= link_to 'Back', issues_path %>
